@@ -7,7 +7,7 @@ Sistema de gestión de alquiler de bicicletas desarrollado en Python como trabaj
 - Nombre — DNI/Legajo
 - Saez Jesus — 42190494/31210
 - Veron Victor Antonio — DNI/Legajo
-- Nombre y Apellido 3 — DNI/Legajo
+- Benitez Byn — 46243104/31209
 - Nombre y Apellido 4 — DNI/Legajo
 - Nombre y Apellido 5 — DNI/Legajo
 
