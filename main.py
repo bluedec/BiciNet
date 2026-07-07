@@ -1,6 +1,7 @@
 from enum import Enum
 from src.lib.gestiones import *
 from src.lib.validaciones import *
+from src.lib.alquileres import *
 
 # ============================================================
 # CONSTANTES
@@ -54,9 +55,9 @@ def mostrar_menu():
 
 def main():
     bicicletas = inicializar_bicicletas(CANTIDAD_BICICLETAS)
-    # clientes = {}
-    # alquileres_activos = {}
-    # historial = []
+    clientes = {}
+    alquileres_activos = {}
+    historial = []
 
     while True:
         mostrar_menu()
@@ -64,11 +65,11 @@ def main():
 
         if opcion == 1:
             mostrar_bicicletas(bicicletas)
+        elif opcion == 2:
+             alquilar_bicicleta(bicicletas, clientes, alquileres_activos)
+        elif opcion == 3:
+             devolver_bicicleta(bicicletas, alquileres_activos, historial)
         # Implementar
-        # elif opcion == 2:
-        #     alquilar_bicicleta(bicicletas, clientes, alquileres_activos)
-        # elif opcion == 3:
-        #     devolver_bicicleta(bicicletas, alquileres_activos, historial)
         # elif opcion == 4:
         #     mostrar_estadisticas(historial, bicicletas)
         elif opcion == 5:
