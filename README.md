@@ -69,6 +69,6 @@ Durante el desarrollo de este proyecto se utilizó **Claude (Anthropic)** como h
 Actualmente implementado:
 - [x] Inicialización de bicicletas
 - [x] Menú principal y visualización de bicicletas disponibles
-- [ ] Alquiler de bicicletas (pendiente de habilitar en el menú)
-- [ ] Devolución de bicicletas (pendiente de habilitar en el menú)
-- [ ] Visualización de estadísticas (pendiente de habilitar en el menú)
+- [x] Alquiler de bicicletas 
+- [x] Devolución de bicicletas
+- [x] Visualización de estadísticas

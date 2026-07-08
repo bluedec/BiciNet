@@ -29,8 +29,7 @@ def alquilar_bicicleta(bicicletas, clientes, alquileres_activos):
             "dni": dni,
             "hora_inicio": datetime.now()
             }
-    print(f"  ✔ Bicicleta N°{bici_disponible['id']:02d} alquilada a "
-          f"{clientes[dni]} (DNI {dni}).\n")
+    print(f"  ✔ Bicicleta N°{bici_disponible['id']:02d} alquilada a {clientes[dni]} (DNI {dni}).\n")
 
 
 def devolver_bicicleta(bicicletas, alquileres_activos, historial):

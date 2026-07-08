@@ -2,6 +2,7 @@ from enum import Enum
 from src.lib.gestiones import *
 from src.lib.validaciones import *
 from src.lib.alquileres import *
+from src.lib.estadistica import *
 
 # ============================================================
 # CONSTANTES
@@ -69,9 +70,8 @@ def main():
              alquilar_bicicleta(bicicletas, clientes, alquileres_activos)
         elif opcion == 3:
              devolver_bicicleta(bicicletas, alquileres_activos, historial)
-        # Implementar
-        # elif opcion == 4:
-        #     mostrar_estadisticas(historial, bicicletas)
+        elif opcion == 4:
+            mostrar_estadisticas(historial, bicicletas)
         elif opcion == 5:
             print("\n¡Gracias por usar el sistema! Hasta pronto.")
             break
