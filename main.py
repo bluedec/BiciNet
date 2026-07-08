@@ -29,8 +29,6 @@ class DividerType(Enum):
     SINGLE = 1
     DOUBLE = 2
 
-### 
-# Divider 
 def divider(type: DividerType = DividerType.SINGLE, length = 40):
     """Print a divider line made of 'equal to' signs."""
     match type:

@@ -4,18 +4,19 @@ Sistema de gestión de alquiler de bicicletas desarrollado en Python como trabaj
 
 ## Integrantes del grupo
 
-- Nombre — DNI/Legajo
-- Saez Jesus — 42190494/31210
-- Veron Victor Antonio — DNI/Legajo
-- Benitez Byn — 46243104/31209
-- Nombre y Apellido 4 — DNI/Legajo
-- Nombre y Apellido 5 — DNI/Legajo
+|NOMBRE|DNI|LEGAJO|
+|---|---|---|
+| Saez Jesus|42190494|31210|
+| Veron Victor Antonio|   |   |
+| Benitez Byn|46243104|31209|
+| Romero Ramiro|46614905|110002|
 
 ## Comisión **K1.1**
 
 ## Descripción general del sistema
 
-**BiciNet** es un sistema de consola que simula la gestión de una red de alquiler de bicicletas urbanas. Permite administrar una flota fija de bicicletas, registrar clientes, gestionar el ciclo completo de alquiler y devolución, y calcular estadísticas de uso del sistema.
+**BiciNet** es un sistema de consola que simula la gestión de una red de alquiler de bicicletas urbanas. 
+Permite administrar una flota fija de bicicletas, registrar clientes, gestionar el ciclo completo de alquiler y devolución, y calcular estadísticas de uso del sistema.
 
 ### Funcionalidades principales
 
@@ -38,7 +39,7 @@ Sistema de gestión de alquiler de bicicletas desarrollado en Python como trabaj
 
 ### Requisitos
 
-- Python 3.10 o superior (se utiliza `match-case`, disponible desde Python 3.10).
+- Python 3.10 o superior.
 
 ### Pasos
 
@@ -63,6 +64,7 @@ Durante el desarrollo de este proyecto se utilizó **Claude (Anthropic)** como h
 - Resolver dudas puntuales sobre estructuras de datos y buenas prácticas en Python.
 - Analizar y depurar errores durante la implementación.
 - Proponer mejoras de organización del código (por ejemplo, separación en funciones y validaciones de entrada).
+- Crear un README base del proyecto, ordenado y acorde a lo que el programa hace
 
 ## Estado del proyecto
 
