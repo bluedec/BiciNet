@@ -6,10 +6,10 @@ Sistema de gestión de alquiler de bicicletas desarrollado en Python como trabaj
 
 |NOMBRE|DNI|LEGAJO|
 |---|---|---|
-| Saez Jesus|42190494|31210|
-| Veron Victor Antonio|   |   |
-| Benitez Byn|46243104|31209|
-| Romero Ramiro|46614905|110002|
+|Saez Jesus|42190494|31210|
+|Veron Victor Antonio|45794235|30998|
+|Benitez Byn|46243104|31209|
+|Romero Ramiro|46614905|110002|
 
 ## Comisión **K1.1**
 
@@ -65,6 +65,7 @@ Durante el desarrollo de este proyecto se utilizó **Claude (Anthropic)** como h
 - Analizar y depurar errores durante la implementación.
 - Proponer mejoras de organización del código (por ejemplo, separación en funciones y validaciones de entrada).
 - Crear un README base del proyecto, ordenado y acorde a lo que el programa hace
+- Utilizacion de fechas para calcular montos
 
 ## Estado del proyecto
 

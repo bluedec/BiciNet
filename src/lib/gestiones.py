@@ -23,15 +23,15 @@ def mostrar_bicicletas(bicicletas):
     """Muestra el estado (disponible/alquilada) de todas las bicicletas."""
     print("\n--- Estado de bicicletas ---")
     for bici in bicicletas:
-        estado = "Disponible" if bici["disponible"] else "Alquilada"
-        print(f"  Bicicleta N°{bici['id']:02d} - {estado}")
+        estado = "Disponible" if bici.disponible else "Alquilada"
+        print(f"  Bicicleta N°{bici.id:02d} - {estado}")
     print("----------------------------\n")
 
 
 def buscar_bicicleta_disponible(bicicletas):
     """Busca y devuelve la primera bicicleta disponible, o None si no hay."""
     for bici in bicicletas:
-        if bici["disponible"]:
+        if bici.disponible:
             return bici
     return None
 
@@ -39,7 +39,7 @@ def buscar_bicicleta_disponible(bicicletas):
 def buscar_bicicleta_por_id(bicicletas, id_bici):
     """Busca una bicicleta por su ID."""
     for bici in bicicletas:
-        if bici["id"] == id_bici:
+        if bici.id == id_bici:
             return bici
     return None
 

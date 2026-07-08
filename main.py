@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import List
 from src.lib.gestiones import *
 from src.lib.validaciones import *
 from src.lib.alquileres import *
@@ -17,11 +18,7 @@ def inicializar_bicicletas(cantidad):
     """Crea la lista de bicicletas disponibles en el sistema."""
     bicicletas = []
     for i in range(1, cantidad + 1):
-        bicicletas.append({
-            "id": i,
-            "disponible": True,
-            "veces_alquilada": 0
-            })
+        bicicletas.append(Bicicleta(i, True, 0))
     return bicicletas
 
 
@@ -53,10 +50,10 @@ def mostrar_menu():
 
 
 def main():
-    bicicletas = inicializar_bicicletas(CANTIDAD_BICICLETAS)
+    bicicletas: List[Bicicleta] = inicializar_bicicletas(CANTIDAD_BICICLETAS)
     clientes = {}
     alquileres_activos = {}
-    historial = []
+    historial: List[Registro] = []
 
     while True:
         mostrar_menu()

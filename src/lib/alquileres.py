@@ -1,6 +1,8 @@
 from datetime import datetime
+from typing import List
 from .gestiones import *
 from .validaciones import *
+from .types import *
 
 TARIFA_MINIMA_MINUTOS = 5  # se cobra un mínimo de 5 minutos aunque el uso sea menor
 PRECIO_POR_MINUTO = 50
@@ -24,15 +26,15 @@ def alquilar_bicicleta(bicicletas, clientes, alquileres_activos):
             print("  ✘ Este cliente ya tiene una bicicleta alquilada.\n")
             return
 
-    bici_disponible["disponible"] = False
-    alquileres_activos[bici_disponible["id"]] = {
+    bici_disponible.disponible = False
+    alquileres_activos[bici_disponible.id] = {
             "dni": dni,
             "hora_inicio": datetime.now()
             }
-    print(f"  ✔ Bicicleta N°{bici_disponible['id']:02d} alquilada a {clientes[dni]} (DNI {dni}).\n")
+    print(f"  ✔ Bicicleta N°{bici_disponible.id:02d} alquilada a {clientes[dni]} (DNI {dni}).\n")
 
 
-def devolver_bicicleta(bicicletas, alquileres_activos, historial):
+def devolver_bicicleta(bicicletas: List[Bicicleta], alquileres_activos, historial):
     """Gestiona la devolución de una bicicleta y calcula el importe."""
     if not alquileres_activos:
         print("  ✘ No hay bicicletas alquiladas actualmente.\n")
@@ -54,8 +56,9 @@ def devolver_bicicleta(bicicletas, alquileres_activos, historial):
                       int((hora_fin - hora_inicio).total_seconds() // 60) + 1)
     importe = minutos_uso * PRECIO_POR_MINUTO
 
-    bici["disponible"] = True
-    bici["veces_alquilada"] += 1
+    if (bici != None):
+        bici.disponible = True
+        bici.veces_alquilada += 1
 
     historial.append({
         "id_bici": id_bici,

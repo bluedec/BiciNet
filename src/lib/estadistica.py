@@ -20,11 +20,11 @@ def mostrar_estadisticas(historial, bicicletas):
 
     promedio_minutos = total_minutos / total_alquileres
 
-    bici_mas_usada = max(bicicletas, key=lambda b: b["veces_alquilada"])
+    bici_mas_usada = max(bicicletas, key=lambda b: b.veces_alquilada)
 
     print(f"  Total de alquileres finalizados: {total_alquileres}")
     print(f"  Recaudación total: ${total_recaudado}")
     print(f"  Tiempo promedio de uso: {promedio_minutos:.1f} minutos")
-    print(f"  Bicicleta más utilizada: N°{bici_mas_usada['id']:02d} "
-          f"({bici_mas_usada['veces_alquilada']} veces)")
+    print(f"  Bicicleta más utilizada: N°{bici_mas_usada.id:02d} "
+          f"({bici_mas_usada.veces_alquilada} veces)")
     print("---------------------------------\n")
